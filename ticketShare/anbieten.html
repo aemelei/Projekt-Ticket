@@ -21,10 +21,14 @@
 
     <!-- Eingabefeld -->
 
-    <label for="von">Von</label>
-    <input type="text" id="von" name="von">
-    <label for="nach">nach</label>
-    <input type="text" id="nach" name="nach"><br><br>
+    <input type="text" id="von" name="von" placeholder="von" required>
+    <input type="text" id="nach" name="nach" placeholder="nach" required><br><br>
+
+   
+    <label for="datum">Wann</label>
+    <input type="date" id="datum" name="datum"><br><br>
+       
+    
 
     <label for="persons">Wie viele freie Plätze hast du?</label>
     <select name="persons" id="persons">
@@ -32,12 +36,8 @@
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-      </select><br><br>
-
-    <form action="/action_page.php">
-        <label for="datum">Wann</label>
-        <input type="date" id="datum" name="datum"><br><br>
         <button type="submit">Fertig</button>
-    </form>
+      </select><br><br>
+    <button type="submit">Fertig</button>
 </body>
 </html>
